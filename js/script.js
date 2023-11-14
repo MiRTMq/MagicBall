@@ -27,7 +27,7 @@ ballDiv.appendChild(ballOut);
         console.log("Клік на кулю");
         if(input.value !== '')
         {
-        	input.value = '';
+        	
         	ballOut.style.opacity = 0;
         	let possibleAnswers = [
                 "Так",
@@ -50,6 +50,6 @@ ballDiv.appendChild(ballOut);
         	alert("Вам потрібно ввести текст")
         }
     });
-
+input.value = '';
    
 });
