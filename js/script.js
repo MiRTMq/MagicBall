@@ -48,8 +48,8 @@ ballDiv.appendChild(ballOut);
         } else{
         	input.placeholder="Введіть текст";
         	alert("Вам потрібно ввести текст")
-        }
+        }input.value = '';
     });
-input.value = '';
+
    
 });
