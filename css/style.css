@@ -1,0 +1,84 @@
+html
+{
+	height: 100%;
+	width: 100%;
+}
+body{
+	background-image: url("../img/image.png");
+	background-size: cover;
+    
+	margin: 0px;
+	height: 100%;
+	width: 100%;	
+}
+
+.inp{
+ 
+    text-align: center;
+    width: 80%;
+    margin-top:3%; 
+    font-size: 90%; 
+    border-radius: 30px;
+    background-color:aquamarine;
+    z-index: 0;
+    
+}
+.ballOut
+{
+    position: absolute;
+    width: 80%; 
+    height: auto; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 100%;
+    z-index: 1;
+
+}
+.ballDiv
+{
+    position: relative;
+    max-width: 40%;
+    margin:10% auto 0% auto;
+    background-color: darkolivegreen;
+    border-radius: 50px; 
+    text-align: center;
+}
+.ballDiv img {
+  max-width: 100%;
+  height: auto;
+  z-index: 0;
+
+}
+
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0); 
+    }
+    25%, 75% {
+        transform: translateX(-15%); 
+    }
+    50% {
+        transform: translateX(15%); 
+    }
+}
+@keyframes fadeIn {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+@keyframes fadeOut{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
+.fadeIn{
+    animation: fadeIn 1s ease-out forwards;
+}
+.fadeout{
+     animation: fadeOut 1s ease-out forwards;
+}
