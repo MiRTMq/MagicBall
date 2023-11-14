@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ballDiv.className = "ballDiv";
 
     let ballImg = document.createElement("img");
-    ballImg.src = "../img/magic_ball.png";
+    ballImg.src = "img/magic_ball.png";
     ballImg.alt = "magic ball image";
     
     let ballOut = document.createElement("p");
